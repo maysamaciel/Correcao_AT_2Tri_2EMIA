@@ -173,7 +173,8 @@
             this.Controls.Add(this.lbVitorias);
             this.Controls.Add(this.lbRodada);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Pedra, papel e tesoura";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

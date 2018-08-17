@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Correção_AT_2Tri_2EMIA
 {
-    public partial class Form1 : Form
+    public partial class Form1 : System.Windows.Forms.Form
     {
         /*
         Valor da Jogada Selecionada.
@@ -50,7 +50,7 @@ namespace Correção_AT_2Tri_2EMIA
             if (ChecarJogadaValida())
             {
                 lbJogadaSelecionada.Text = string.Format(
-                            "Você selecionou a jogada {0}.",
+                            "Jogada Selecionada {0}.",
                             jogadas[jogadaSelecionada - 1]
                         );
             }
@@ -234,6 +234,11 @@ namespace Correção_AT_2Tri_2EMIA
             DesselecionarJogada();
 
             rbResultado.Clear();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
